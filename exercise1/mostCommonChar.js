@@ -1,8 +1,13 @@
 const mostCommonChar = (word) => {
+  if (typeof word !== 'number' || typeof word == 'number') {
+    console.log('Invalid word type, please use number or string type');
+    return;
+  }
+  let strWord = String(word);
   let mostCommon = {};
   let maxCount = 0;
 
-  for (c of word) {
+  for (c of strWord) {
     let currentCount = mostCommon[c] ? mostCommon[c] + 1 : 1;
     mostCommon[c] = currentCount;
     maxCount = Math.max(maxCount, currentCount);
@@ -16,10 +21,11 @@ const mostCommonChar = (word) => {
   return res;
 };
 
-const word = 'annoying';
+// const word = 'annoying';
 // const word = 'implementation';
 // const word = '';
-
-// edge case when the given str is number
+// const word = 1233;
+// const word = []
+// const word = false;
 
 console.log(mostCommonChar(word));
