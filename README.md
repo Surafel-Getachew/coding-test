@@ -4,6 +4,8 @@
 
 * Time complextity = O(n^2) where n is the number of characters
 * Space complexity = O(n) where n is the number of characters
+* handle edge case's when the input is not of type number or string
+
 
 
 ## exercise-2
