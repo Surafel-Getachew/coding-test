@@ -1,5 +1,5 @@
 const mostCommonChar = (word) => {
-  if (typeof word !== 'number' || typeof word == 'number') {
+  if (typeof word !== 'number' || typeof word == 'string') {
     console.log('Invalid word type, please use number or string type');
     return;
   }
